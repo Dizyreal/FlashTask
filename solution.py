@@ -94,5 +94,5 @@ petr_regions = [x for x in [region1_data, region2_data, region3_data] if x != ev
 choosen_region = petr_regions[1] if get_region_total_prib(petr_regions[0]) > get_region_total_prib(petr_regions[1]) else petr_regions[0]
 
 # Находим количество закрытых ПВЗ в пункте B и сэкономленную сумму, вписываем их в ответ
-Np, Pp = get_region_task_data(choosen_region)
-print(Np, Pp)
+Vp, Lp = get_region_task_data(choosen_region)
+print(Vp, Lp)
